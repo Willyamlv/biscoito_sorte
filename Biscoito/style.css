@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+    /* width: 100vw; */
+    min-height: 100vh;
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+    
+}
+
+.screen {
+    width: min(42.8rem, 90%);
+    border-radius: 0.5rem;
+    background: #FFF;
+    box-shadow: 0rem 2rem 5rem 0rem rgba(0, 0, 0, 0.80);
+    padding: 4.8rem 6.4rem 6.4rem;
+    text-align: center;
+}
+
+.screen .hide {
+    display: none;
+}
+
+.screen h1 {
+    font-family: 'Montserrat';
+    color: #34355B;
+    text-align: center;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 1.4rem;
+}
+
+.screen p {
+    font-family: 'DM Sans';
+    color: #34355B;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 2.7rem;
+}
+
+
+.screen h2 {
+    color: #000;
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 1.0rem;
+    background: #E4EDF1;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0rem rgba(85, 85, 85, 0.50);
+    margin-bottom: 6.0rem;
+    animation-name: toFadeIn;
+    animation-duration: 2s;
+}
+
+.screen button {
+    color: #FFF;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    border-radius: 0.4rem;
+    background: #FF9500;
+    padding: 1.6rem;
+    
+    border: 0;
+
+    transition: background .3s;
+    cursor: pointer;
+    margin-top: 6.0rem;
+}
+
+.screen button:hover {
+    background-color: #d38313;
+}
+
+.screen .openedCookie {
+    width: 30.0rem;
+    height: 11.5rem;
+}
+
+#fortuneCookie:hover {
+    cursor: pointer;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes toFadeIn {
+    0% {
+      transform:
+      translateY(150px)
+      scale(0.1);
+
+    }
+
+    100% {
+      transform:
+      translateY(0px)
+      scale(1);
+    }
+  }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
